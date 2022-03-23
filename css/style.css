@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(13, 25, 44, 1);
+  font-family: "Outfit", sans-serif;
+}
+h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #88acd9;
+  margin-bottom: 20px;
+}
+
+.main-bg {
+  width: 330px;
+  height: 546px;
+  left: 545px;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 26px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.image {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.eye-img {
+  opacity: 0;
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  transition: 200ms;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icon-view.svg);
+}
+
+.eye-img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.detail-conteiner {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.value {
+  color: hsl(178, 100%, 50%);
+}
+.time {
+  color: hsl(215, 51%, 70%);
+}
+.line {
+  border-top: 1px solid hsl(215, 51%, 70%);
+  margin-bottom: 10px;
+}
+.creator-container {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  background-image: url(../images/image-avatar.png);
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.creator {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  text-align: center;
+}
+.creator span {
+  color: white;
+}
+.title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.attribut {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+.attribut a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 900px) {
+  .main-bg {
+    width: 354px;
+    height: 600px;
+  }
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  .eye-img {
+    width: 300px;
+    height: 300px;
+  }
+  hr {
+    margin-bottom: 20px;
+  }
+}
