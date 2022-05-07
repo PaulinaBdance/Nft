@@ -79,21 +79,25 @@ h2 {
 }
 .creator-container {
   display: flex;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
 }
 .avatar {
-  background-image: url(../images/image-avatar.png);
+
   width: 36px;
   height: 36px;
   background-size: cover;
   border: 1px solid white;
   border-radius: 50px;
   margin-right: 10px;
+
+
 }
 .creator {
   color: hsl(215, 51%, 70%);
   font-size: 18px;
-  text-align: center;
+
 }
 .creator span {
   color: white;
